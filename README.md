@@ -42,7 +42,7 @@ alt='Jayed Hossain Jibon'
 
 <hr/>
 
-#### 01. Return Customers table from Customers table
+#### 01. Return ContactName from Customers table
 
 ```
 Customers table
