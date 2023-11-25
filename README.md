@@ -47,7 +47,7 @@ alt='Jayed Hossain Jibon'
 <details><summary style="cursor:pointer">Solution</summary>
 
 ```sql
-create database learn_sql
+create database learn_sql;
 drop database learn_sql;
 ```
 </details>
@@ -85,6 +85,12 @@ drop table Customers;
 ```sql
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 VALUES ('Jibon Ahmed', '01987132107', '69/A, Dhaka', 'Dhaka', '1200', 'Bangladesh');
+
+--- Multiple value insert
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES 
+('Jibon Ahmed',   '01987132107', '69/A, Dhaka', 'Dhaka', '1200', 'Bangladesh'),
+('Jayed Hossain', 'Georg Pipps', 'Geislweg 14', 'Salzburg ', '5020 ', 'Austria');
 ```
 </details>
 
