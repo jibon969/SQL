@@ -42,20 +42,52 @@ alt='Jayed Hossain Jibon'
 
 <hr/>
 
-#### 01. Return ContactName from Customers table
+#### 01. Create database and drop database 
 
-```
-Customers table
-CustomerID | CustomerName  | ContactName | Address | City  | PostalCode | Country
-1          | Jayed Hossain | 01987132107 | Dhaka   | Dhaka | 1200       | Bangladesh
-
-```
 <details><summary style="cursor:pointer">Solution</summary>
 
 ```sql
-select phone_number from Customers;
+create database learn_sql
+drop database learn_sql;
 ```
 </details>
+
+#### 02. How to create table
+
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+CREATE TABLE Customers (
+    CustomerID serial PRIMARY KEY,
+    CustomerName VARCHAR ( 100 ) UNIQUE NOT NULL,
+    ContactName VARCHAR ( 20 ) NOT NULL,
+    Address VARCHAR ( 100 ) NOT NULL,
+    City VARCHAR ( 100 ) UNIQUE NOT NULL,
+    PostalCode VARCHAR ( 100 ) UNIQUE NOT NULL,
+    Country VARCHAR ( 100 ) UNIQUE NOT NULL
+);
+```
+</details>
+
+#### 03. How to drop table 
+
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+drop table Customers;
+```
+</details>
+
+#### 04. Insert data into a table
+
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Jibon Ahmed', '01987132107', '69/A, Dhaka', 'Dhaka', '1200', 'Bangladesh');
+```
+</details>
+
 
 
 ---
