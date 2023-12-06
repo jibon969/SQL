@@ -117,6 +117,21 @@ select CustomerName, City from customers
 ```
 </details>
 
+#### The SELECT DISTINCT statement is used to return only distinct 
+```
+Syntax:
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+```
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+select count(DISTINCT country) from customers;
+```
+</details>
+
+
+
 
 ---
 **[⬆ Back to Top](#header)**
