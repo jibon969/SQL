@@ -94,6 +94,28 @@ VALUES
 ```
 </details>
 
+### SQL Query 
+
+#### Return all the columns from the Customers table
+```
+Syntax:
+SELECT column1, column2, ...
+FROM table_name; 
+```
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+select * from customers
+```
+</details>
+
+#### Return CustomerName, City from the Customers table
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+select CustomerName, City from customers
+```
+</details>
 
 
 ---
