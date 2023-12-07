@@ -140,12 +140,25 @@ WHERE condition;
 ```
 </details>
 
-#### Select all customers from Bangladesh:
+#### Select all customers from Bangladesh ?
+```
+SQL requires single quotes around text values
+```
 <details><summary style="cursor:pointer">Solution</summary>
 
 ```sql
 SELECT * FROM Customers
 WHERE Country='Bangladesh';
+```
+</details>
+
+
+#### Select all customers with a CustomerID greater than 80:
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+WHERE CustomerID > 80;
 ```
 </details>
 
