@@ -131,6 +131,25 @@ select count(DISTINCT country) from customers;
 </details>
 
 
+#### SQL WHERE Clause
+```
+Syntax:
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+</details>
+
+#### Select all customers from Bangladesh:
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+WHERE Country='Bangladesh';
+```
+</details>
+
+
 
 
 ---
