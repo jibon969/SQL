@@ -163,6 +163,35 @@ WHERE CustomerID > 80;
 </details>
 
 
+#### SQL ORDER BY Keyword
+```
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+Syntax:
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+```
+
+#### Sort the products from highest to lowest price:
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Products
+ORDER BY Price DESC;
+```
+</details>
+
+
+#### Sort the products alphatbetically by ProductName:
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Products
+ORDER BY ProductName;
+```
+</details>
+
+
 
 
 ---
