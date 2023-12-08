@@ -192,6 +192,15 @@ ORDER BY ProductName;
 </details>
 
 
+#### Sort the products by ProductName in reverse order
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Products
+ORDER BY ProductName DESC;
+```
+</details>
+
 
 
 ---
