@@ -202,6 +202,16 @@ ORDER BY ProductName DESC;
 </details>
 
 
+#### Selects all customer sorted by the Country and CustomerName
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+```
+</details>
+
+
 
 ---
 **[⬆ Back to Top](#header)**
