@@ -240,6 +240,17 @@ and PostalCode > 12000;
 </details>
 
 
+#### Select all Spanish customers that starts with either "G" or "R"
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+where Country = 'Spanish'
+(CustomerName LIKE 'G%' OR CustomerName LIKE 'R%')
+```
+</details>
+
+
 ---
 **[⬆ Back to Top](#header)**
 
