@@ -219,6 +219,14 @@ FROM table_name
 WHERE condition1 AND condition2 AND condition3 ...;
 ```
 
+#### Select all customers from Spain that starts with the letter 'G':
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+where Country = 'Spain' and CustomerName LIKE 'G%';
+```
+</details>
 
 
 ---
