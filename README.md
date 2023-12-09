@@ -219,12 +219,34 @@ FROM table_name
 WHERE condition1 AND condition2 AND condition3 ...;
 ```
 
-#### Select all customers from Spain that starts with the letter 'G':
+#### Select all customers from Spain that starts with the letter 'G'
 <details><summary style="cursor:pointer">Solution</summary>
 
 ```sql
 SELECT * FROM Customers
 where Country = 'Spain' and CustomerName LIKE 'G%';
+```
+</details>
+
+#### Selects all fields from Customers where Country is "Germany" AND City is "Berlin" AND PostalCode is higher than 12000
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+where Country = 'Germany' 
+and City ="Berlin" 
+and PostalCode > 12000;
+```
+</details>
+
+
+#### Select all Spanish customers that starts with either "G" or "R"
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+where Country = 'Spanish'
+(CustomerName LIKE 'G%' OR CustomerName LIKE 'R%')
 ```
 </details>
 
