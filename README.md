@@ -269,6 +269,15 @@ WHERE Country = 'Germany' OR Country = 'Spain';
 ```
 </details>
 
+#### Select all Spanish customers that starts with either "G" or "R"
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT * FROM Customers
+WHERE City = 'Berlin' OR CustomerName LIKE 'G%' OR Country = 'Norway';
+```
+</details>
+
 
 ---
 **[⬆ Back to Top](#header)**
