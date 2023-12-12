@@ -251,6 +251,15 @@ where Country = 'Spanish'
 </details>
 
 
+#### SQL OR Operator
+```
+Syntax :
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+```
+
+
 ---
 **[⬆ Back to Top](#header)**
 
