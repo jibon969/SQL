@@ -259,6 +259,16 @@ FROM table_name
 WHERE condition1 OR condition2 OR condition3 ...;
 ```
 
+#### Select all customers from Germany or Spain
+<details><summary style="cursor:pointer">Solution</summary>
+
+```sql
+SELECT *
+FROM Customers
+WHERE Country = 'Germany' OR Country = 'Spain';
+```
+</details>
+
 
 ---
 **[⬆ Back to Top](#header)**
